@@ -1,0 +1,51 @@
+export default function NewspaperPage() {
+  const issues = [
+    {
+      title: "صحيفة العيكورة - العدد 4",
+      file: "/newspaper/Sayi%204.pdf",
+    },
+    {
+      title: "صحيفة العيكورة - العدد 5",
+      file: "/newspaper/Sayi%205.pdf",
+    },
+  ];
+
+  return (
+    <main className="max-w-6xl mx-auto p-6">
+      <h1 className="text-4xl font-bold text-green-900 mb-8">
+        أرشيف صحيفة العيكورة
+      </h1>
+
+      <div className="grid gap-6">
+        {issues.map((issue) => (
+          <div
+            key={issue.file}
+            className="bg-white rounded-xl shadow p-6"
+          >
+            <h2 className="text-2xl font-bold mb-4">
+              {issue.title}
+            </h2>
+
+            <div className="flex gap-3">
+              <a
+                href={issue.file}
+                target="_blank"
+                className="bg-green-800 text-white px-4 py-2 rounded-lg"
+              >
+                قراءة العدد
+              </a>
+
+              <a
+                href={issue.file}
+                download
+                className="bg-yellow-500 px-4 py-2 rounded-lg"
+              >
+                تحميل PDF
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </main>
+  );
+}
