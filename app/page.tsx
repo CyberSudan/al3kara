@@ -2,77 +2,85 @@ import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <main className="bg-slate-50">
+    <main className="min-h-screen bg-slate-50">
 
       <Navbar />
 
-      {/* Hero Section */}
-      <section className="bg-green-900 text-white py-28 text-center">
-        <div className="max-w-5xl mx-auto px-6">
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-green-950 via-green-900 to-green-800 text-white py-24">
+        <div className="max-w-6xl mx-auto px-6 text-center">
 
-          <h1 className="text-6xl font-bold mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">
             العيكورة
           </h1>
 
-          <p className="text-xl text-yellow-400">
-            بوابة العيكورة الرقمية للتوثيق، التواصل، والتنمية
+          <p className="text-yellow-300 text-lg md:text-xl max-w-2xl mx-auto">
+            بوابة رقمية للتوثيق، التواصل، وحفظ الذاكرة المجتمعية
           </p>
 
-          <div className="mt-10 flex justify-center gap-4 flex-wrap">
+        </div>
+      </section>
 
-            <button className="bg-yellow-500 text-black px-6 py-3 rounded-xl hover:bg-yellow-400 transition">
-              استكشف القرية
-            </button>
+      {/* Introduction */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <div className="bg-white rounded-2xl shadow-lg p-8">
 
-            <a
-              href="/news"
-              className="border border-white px-6 py-3 rounded-xl hover:bg-white hover:text-green-900 transition"
-            >
-              آخر الأخبار
-            </a>
+          <h2 className="text-3xl font-bold text-green-900 mb-6">
+            نبذة عن الموقع
+          </h2>
 
-          </div>
+          <p className="leading-10 text-lg text-gray-700">
+            موقع العيكورة هو منصة رقمية تهدف إلى توثيق تاريخ القرية
+            ومجتمعها، وربط أبنائها داخل السودان وخارجه، عبر محتوى
+            يشمل الأخبار، الرواد، الصور، والإصدارات الإلكترونية.
+          </p>
 
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="max-w-6xl mx-auto py-20 px-6">
+      {/* Cards */}
+      <section className="max-w-6xl mx-auto px-6 pb-20">
 
-        <h2 className="text-4xl font-bold mb-6 text-green-900">
-          نبذة عن العيكورة
-        </h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-        <p className="text-lg leading-10 text-gray-700">
-          تقع العيكورة على الضفة الغربية للنيل الأزرق بولاية الجزيرة،
-          وتمثل إحدى المناطق ذات الامتداد التاريخي والاجتماعي العريق،
-          كما ارتبطت عبر تاريخها بالزراعة ومشروع الجزيرة والتعليم،
-          وتعد اليوم من القرى التي تشهد تطوراً في التوثيق الرقمي
-          وحفظ الذاكرة المجتمعية عبر الإنترنت.
-        </p>
-
-      </section>
-
-      {/* Quick Links */}
-      <section className="bg-white py-16">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
-
-          <a href="/pioneers" className="bg-slate-50 p-6 rounded-xl shadow hover:shadow-lg transition">
-            <h3 className="text-xl font-bold text-green-900 mb-2">رواد العيكورة</h3>
-            <p className="text-gray-600">توثيق الشخصيات المؤثرة في تاريخ القرية.</p>
+          <a href="/pioneers" className="bg-white rounded-2xl shadow p-6 hover:shadow-2xl hover:-translate-y-1 transition">
+            <h3 className="text-2xl font-bold text-green-900 mb-3">
+              الرواد
+            </h3>
+            <p className="text-gray-600">
+              توثيق الشخصيات المؤثرة في تاريخ العيكورة.
+            </p>
           </a>
 
-          <a href="/newspaper" className="bg-slate-50 p-6 rounded-xl shadow hover:shadow-lg transition">
-            <h3 className="text-xl font-bold text-green-900 mb-2">صحيفة العيكورة</h3>
-            <p className="text-gray-600">أرشيف الأخبار والإصدارات الإلكترونية.</p>
+          <a href="/newspaper" className="bg-white rounded-2xl shadow p-6 hover:shadow-2xl hover:-translate-y-1 transition">
+            <h3 className="text-2xl font-bold text-green-900 mb-3">
+              الصحيفة
+            </h3>
+            <p className="text-gray-600">
+              أرشيف صحيفة العيكورة والإصدارات الإلكترونية.
+            </p>
           </a>
 
-          <a href="/gallery" className="bg-slate-50 p-6 rounded-xl shadow hover:shadow-lg transition">
-            <h3 className="text-xl font-bold text-green-900 mb-2">معرض الصور</h3>
-            <p className="text-gray-600">صور توثق تاريخ ومجتمع العيكورة.</p>
+          <a href="/gallery" className="bg-white rounded-2xl shadow p-6 hover:shadow-2xl hover:-translate-y-1 transition">
+            <h3 className="text-2xl font-bold text-green-900 mb-3">
+              المعرض
+            </h3>
+            <p className="text-gray-600">
+              صور توثق تاريخ ومناسبات العيكورة.
+            </p>
+          </a>
+
+          <a href="/history" className="bg-white rounded-2xl shadow p-6 hover:shadow-2xl hover:-translate-y-1 transition">
+            <h3 className="text-2xl font-bold text-green-900 mb-3">
+              التاريخ
+            </h3>
+            <p className="text-gray-600">
+              لمحة عن تاريخ العيكورة وجذورها.
+            </p>
           </a>
 
         </div>
+
       </section>
 
     </main>
