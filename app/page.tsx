@@ -83,6 +83,21 @@ export default function Home() {
 
       </section>
 
+      {/* Footer */}
+      <footer className="bg-green-950 text-white py-10 mt-10">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+
+          <p className="text-yellow-300 font-semibold text-lg">
+            جميع الحقوق محفوظة © العيكورة
+          </p>
+
+          <p className="text-gray-300 text-sm mt-2">
+            منصة العيكورة الرقمية للتوثيق والتواصل
+          </p>
+
+        </div>
+      </footer>
+
     </main>
   );
 }
