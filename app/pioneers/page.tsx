@@ -1,99 +1,131 @@
+import Navbar from "../components/Navbar";
+
 export default function PioneersPage() {
-return (
-<main className="min-h-screen bg-slate-50">
-<section className="bg-green-900 text-white py-20">
-<div className="max-w-6xl mx-auto px-6">
-<h1 className="text-5xl font-bold mb-4">
-رواد العيكورة الرقمية
-</h1>
+  return (
+    <main className="min-h-screen bg-slate-50">
 
-      <p className="text-yellow-400 text-lg">
-        توثيق للبدايات الأولى لحضور العيكورة على شبكة الإنترنت
-      </p>
-    </div>
-  </section>
+      <Navbar />
 
-  <section className="max-w-5xl mx-auto px-6 py-16">
-    <div className="bg-white rounded-2xl shadow-lg p-8">
-      <h2 className="text-3xl font-bold text-green-900 mb-6">
-        منتدى شباب العيكورة الإلكتروني
-      </h2>
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-green-950 via-green-900 to-green-800 text-white py-24">
+        <div className="max-w-6xl mx-auto px-6 text-center">
 
-      <p className="leading-9 text-lg">
-        شهدت العيكورة في عام 2009 تقريباً انطلاقة أول منصة إلكترونية
-        متخصصة حملت اسم "منتدى شباب العيكورة"، والذي مثّل نقطة تحول
-        مهمة في التواصل بين أبناء العيكورة داخل السودان وخارجه، وأسهم
-        في جمع أبناء القرية في مساحة رقمية واحدة لتبادل الأخبار
-        والآراء والذكريات.
-      </p>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-yellow-300">
+            رواد العيكورة الرقمية
+          </h1>
 
-      <p className="leading-9 text-lg mt-6">
-        كان المنتدى متاحاً عبر العنوان:
-      </p>
+          <p className="text-yellow-200 text-lg md:text-xl max-w-2xl mx-auto">
+            توثيق أولى المبادرات الرقمية التي ربطت أبناء العيكورة عبر الإنترنت
+          </p>
 
-      <div className="bg-gray-100 p-4 rounded-lg mt-4 text-center font-bold">
-        al3kara.forumup.com
-      </div>
+        </div>
+      </section>
 
-      <p className="leading-9 text-lg mt-6">
-        وقد لعب المنتدى دوراً بارزاً في تعزيز الروابط الاجتماعية بين
-        أبناء العيكورة، وربط المغتربين بقريتهم، كما أسهم في توثيق
-        جوانب من تاريخ العيكورة وأخبارها وأنشطتها، ليُعد من أوائل
-        المبادرات الرقمية التي خدمت المجتمع المحلي عبر الإنترنت.
-      </p>
-    </div>
-  </section>
+      {/* Intro */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <div className="bg-white rounded-2xl shadow-lg p-8">
 
-  <section className="max-w-5xl mx-auto px-6 pb-16">
-    <h2 className="text-3xl font-bold text-green-900 mb-8">
-      من رواد المبادرة
-    </h2>
+          <h2 className="text-3xl font-bold text-yellow-600 mb-6 border-r-4 border-yellow-500 pr-4">
+            البداية الرقمية
+          </h2>
 
-    <div className="bg-white rounded-2xl shadow-lg p-8">
-      <h3 className="text-2xl font-bold">
-        مبارز طه الإمام
-      </h3>
+          <p className="leading-10 text-lg text-gray-700">
+            شهدت العيكورة في أوائل الألفينات انطلاقة أول حضور رقمي لها عبر
+            منتديات إلكترونية جمعت أبناء القرية داخل السودان وخارجه،
+            وكانت بداية لتوثيق التاريخ وبناء مجتمع رقمي متواصل.
+          </p>
 
-      <p className="text-gray-600 mt-3 leading-8">
-        يُعد من أوائل المساهمين في تأسيس وإدارة منتدى شباب العيكورة
-        الإلكتروني، وأسهم بجهد مقدر في دعم الحضور الرقمي للعيكورة
-        خلال سنواته الأولى.
-      </p>
+        </div>
+      </section>
 
-      <p className="text-gray-600 mt-4 leading-8">
-        كما شارك عدد كبير من أبناء العيكورة في إنجاح هذه التجربة
-        الرائدة، وتقديراً للجميع سيتم العمل على إضافة الأسماء
-        والمساهمات تباعاً كلما توفرت المعلومات والوثائق اللازمة.
-      </p>
-    </div>
-  </section>
+      {/* Key Platform */}
+      <section className="max-w-6xl mx-auto px-6 pb-16">
 
-  <section className="max-w-5xl mx-auto px-6 pb-16">
-    <h2 className="text-3xl font-bold text-green-900 mb-8">
-      كلمة وفاء
-    </h2>
+        <div className="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-yellow-500">
 
-    <div className="bg-white rounded-2xl shadow-lg p-8">
-      <p className="leading-9 text-lg">
-        يأتي موقع العيكورة الحالي امتداداً للجهود التي بدأت مع منتدى
-        شباب العيكورة الإلكتروني، ووفاءً لكل من ساهم في تأسيس المنتدى
-        وإدارته وإثراء محتواه وخدمة أبناء العيكورة عبر الفضاء الرقمي.
-      </p>
+          <h2 className="text-3xl font-bold text-green-900 mb-4">
+            منتدى شباب العيكورة الإلكتروني
+          </h2>
 
-      <p className="leading-9 text-lg mt-6">
-        إن هذا التوثيق هو محاولة لحفظ جانب مهم من تاريخ العيكورة
-        الرقمي، وتقدير لكل من أسهم في بناء هذا الإرث الذي مهد الطريق
-        للمبادرات والمنصات الحالية.
-      </p>
-    </div>
-  </section>
+          <p className="text-lg text-gray-700 leading-9">
+            كان المنتدى منصة تجمع أبناء العيكورة لتبادل الأخبار،
+            توثيق الأحداث، وتعزيز الروابط الاجتماعية، وقد شكل نقطة تحول
+            مهمة في التاريخ الرقمي للقرية.
+          </p>
 
-  <footer className="bg-green-950 text-white py-10">
-    <div className="max-w-6xl mx-auto px-6 text-center">
-      <p>إعداد وتوثيق: موقع العيكورة</p>
-    </div>
-  </footer>
-</main>
+          <div className="mt-6 bg-slate-100 p-4 rounded-lg text-center font-bold text-green-900">
+            al3kara.forumup.com
+          </div>
 
-);
+        </div>
+
+      </section>
+
+      {/* Founder */}
+      <section className="max-w-6xl mx-auto px-6 pb-16">
+
+        <h2 className="text-3xl font-bold text-yellow-600 mb-6 border-r-4 border-yellow-500 pr-4">
+          المؤسسون
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-6">
+
+          <div className="bg-white rounded-2xl shadow p-6 hover:shadow-2xl transition">
+            <h3 className="text-2xl font-bold text-green-900 mb-2">
+              مبارز طه الإمام
+            </h3>
+            <p className="text-gray-600">
+              من أوائل مؤسسي المنتدى الإلكتروني وأحد رواد العمل الرقمي في العيكورة.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow p-6 hover:shadow-2xl transition">
+            <h3 className="text-2xl font-bold text-green-900 mb-2">
+              مساهمون آخرون
+            </h3>
+            <p className="text-gray-600">
+              العديد من الشباب الذين ساهموا في بناء المحتوى الرقمي وتوثيق تاريخ القرية.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* Legacy */}
+      <section className="max-w-6xl mx-auto px-6 pb-20">
+
+        <div className="bg-white rounded-2xl shadow-lg p-8">
+
+          <h2 className="text-3xl font-bold text-yellow-600 mb-6 border-r-4 border-yellow-500 pr-4">
+            الإرث الرقمي
+          </h2>
+
+          <p className="text-lg text-gray-700 leading-10">
+            تمثل هذه المبادرات الأساس الذي بني عليه موقع العيكورة الحالي،
+            والذي يواصل اليوم مسيرة التوثيق وربط الأجيال الرقمية الجديدة
+            بتاريخ ومجتمع العيكورة.
+          </p>
+
+        </div>
+
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-green-950 text-white py-10 mt-10">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+
+          <p className="text-yellow-300 font-semibold text-lg">
+            جميع الحقوق محفوظة ©  العيكورة 
+          </p>
+
+          <p className="text-gray-300 text-sm mt-2">
+            منصة العيكورة الرقمية للتوثيق
+          </p>
+
+        </div>
+      </footer>
+
+    </main>
+  );
 }
