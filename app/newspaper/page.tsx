@@ -17,28 +17,31 @@ export default function NewspaperPage() {
   return (
     <main className="min-h-screen bg-slate-50">
 
-      {/* Header */}
-      <section className="bg-green-900 text-white py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <h1 className="text-5xl font-bold mb-4">
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-green-950 via-green-900 to-green-800 text-white py-24">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-yellow-300">
             صحيفة العيكورة
           </h1>
 
-          <p className="text-yellow-400 text-lg">
-            أرشيف أعداد صحيفة العيكورة الإلكترونية
+          <p className="text-yellow-200 text-lg md:text-xl">
+            أرشيف الإصدارات الإلكترونية وتوثيق أخبار المجتمع
           </p>
+
         </div>
       </section>
 
-      {/* About / Editorial Team */}
-      <section className="max-w-6xl mx-auto px-6 py-12">
+      {/* Editorial Team */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+
         <div className="bg-white rounded-2xl shadow-lg p-8">
 
-          <h2 className="text-3xl font-bold text-green-900 mb-6">
+          <h2 className="text-3xl font-bold text-yellow-600 mb-6 border-r-4 border-yellow-500 pr-4">
             هيئة التحرير
           </h2>
 
-          <div className="space-y-6 text-lg">
+          <div className="space-y-6 text-lg text-gray-700">
 
             <div>
               <h3 className="font-bold text-green-900">رئيس التحرير</h3>
@@ -52,8 +55,8 @@ export default function NewspaperPage() {
 
             <div>
               <h3 className="font-bold text-green-900">مستشارو التحرير</h3>
-              <ul className="list-disc mr-6 mt-2 space-y-1">
-                <li>أ. مالله محمد طه</li>
+              <ul className="list-disc pr-6 mt-2 space-y-1">
+                <li>أ. مالك محمد طه</li>
                 <li>صبري محمد علي</li>
                 <li>أ. عمر عبد الرزاق يوسف</li>
                 <li>أ. أبو بكر عبد الله الطيب</li>
@@ -62,17 +65,18 @@ export default function NewspaperPage() {
 
           </div>
 
-          <p className="mt-6 text-gray-700">
+          <p className="mt-6 text-gray-700 border-t pt-4">
             إصدارة إلكترونية شهرية برعاية جمعية إبراهيم عبد السلام الخيرية بالعيكورة.
           </p>
 
         </div>
+
       </section>
 
-      {/* Archive */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
+      {/* Issues */}
+      <section className="max-w-6xl mx-auto px-6 pb-20">
 
-        <h2 className="text-3xl font-bold text-green-900 mb-8">
+        <h2 className="text-3xl font-bold text-yellow-600 mb-8 border-r-4 border-yellow-500 pr-4">
           الأعداد المتوفرة
         </h2>
 
@@ -81,7 +85,7 @@ export default function NewspaperPage() {
           {issues.map((issue) => (
             <div
               key={issue.number}
-              className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition"
+              className="bg-white rounded-2xl shadow p-6 hover:shadow-2xl hover:-translate-y-1 transition border-t-4 border-yellow-500"
             >
               <h3 className="text-xl font-bold text-green-900 mb-2">
                 {issue.title}
@@ -103,6 +107,21 @@ export default function NewspaperPage() {
 
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-green-950 text-white py-10 mt-10">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+
+          <p className="text-yellow-300 font-semibold text-lg">
+            جميع الحقوق محفوظة © صحيفة العيكورة
+          </p>
+
+          <p className="text-gray-300 text-sm mt-2">
+            منصة العيكورة الرقمية للتوثيق والإعلام المجتمعي
+          </p>
+
+        </div>
+      </footer>
 
     </main>
   );
