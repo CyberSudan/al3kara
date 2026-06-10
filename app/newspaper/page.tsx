@@ -7,10 +7,16 @@ export default function NewspaperPage() {
       file: "/newspaper/issue-004.pdf",
     },
     {
-      number: "005",
-      title: "صحيفة العيكورة - العدد الخامس",
-      description: "متابعة الأخبار والفعاليات المجتمعية.",
-      file: "/newspaper/issue-005.pdf",
+      number: "002",
+      title: "صحيفة العيكورة - العدد الثاني",
+      description: "متابعة أخبار المجتمع والمبادرات.",
+      file: "/newspaper/issue-002.pdf",
+    },
+    {
+      number: "003",
+      title: "صحيفة العيكورة - العدد الثالث",
+      description: "فعاليات وأخبار محلية متنوعة.",
+      file: "/newspaper/issue-003.pdf",
     },
   ];
 
