@@ -30,6 +30,45 @@ export default function NewspaperPage() {
         </div>
       </section>
 
+      {/* About / Editorial Team */}
+      <section className="max-w-6xl mx-auto px-6 py-12">
+        <div className="bg-white rounded-2xl shadow-lg p-8">
+
+          <h2 className="text-3xl font-bold text-green-900 mb-6">
+            هيئة التحرير
+          </h2>
+
+          <div className="space-y-6 text-lg">
+
+            <div>
+              <h3 className="font-bold text-green-900">رئيس التحرير</h3>
+              <p>م. الطيب عبد الله الطيب البشير</p>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-green-900">سكرتير التحرير</h3>
+              <p>أماني الأمين محمد سعيد</p>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-green-900">مستشارو التحرير</h3>
+              <ul className="list-disc mr-6 mt-2 space-y-1">
+                <li>أ. مالله محمد طه</li>
+                <li>صبري محمد علي</li>
+                <li>أ. عمر عبد الرزاق يوسف</li>
+                <li>أ. أبو بكر عبد الله الطيب</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <p className="mt-6 text-gray-700">
+            إصدارة إلكترونية شهرية برعاية جمعية إبراهيم عبد السلام الخيرية بالعيكورة.
+          </p>
+
+        </div>
+      </section>
+
       {/* Archive */}
       <section className="max-w-6xl mx-auto px-6 py-16">
 
@@ -42,56 +81,28 @@ export default function NewspaperPage() {
           {issues.map((issue) => (
             <div
               key={issue.number}
-              className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100"
+              className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition"
             >
-              <div className="mb-4">
-                <span className="bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold">
-                  العدد {issue.number}
-                </span>
-              </div>
-
-              <h3 className="text-2xl font-bold text-green-900 mb-3">
+              <h3 className="text-xl font-bold text-green-900 mb-2">
                 {issue.title}
               </h3>
 
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-4">
                 {issue.description}
               </p>
 
-              <div className="flex gap-3 flex-wrap">
-
-                <a
-                  href={issue.file}
-                  target="_blank"
-                  className="bg-green-800 hover:bg-green-900 text-white px-5 py-2 rounded-lg transition"
-                >
-                  قراءة العدد
-                </a>
-
-                <a
-                  href={issue.file}
-                  download
-                  className="bg-yellow-500 hover:bg-yellow-600 text-black px-5 py-2 rounded-lg transition"
-                >
-                  تحميل PDF
-                </a>
-
-              </div>
+              <a
+                href={issue.file}
+                target="_blank"
+                className="text-yellow-600 font-bold hover:underline"
+              >
+                تحميل العدد
+              </a>
             </div>
           ))}
 
         </div>
-
       </section>
-
-      {/* Footer */}
-      <footer className="bg-green-950 text-white py-10 mt-16">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <p>
-            © جميع الحقوق محفوظة - صحيفة العيكورة
-          </p>
-        </div>
-      </footer>
 
     </main>
   );
